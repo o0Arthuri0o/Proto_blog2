@@ -77,7 +77,7 @@ function renderCards(posts) {
 }
 
 function redirect() {
-	let baseURL = window.location.protocol + '//' + window.location.host + '/page.html';
+	let baseURL = window.location.protocol + '//' + window.location.host + '/Proto_blog/page.html';
 	let newURL = baseURL + `?id=${this.dataset.id}&userId=${this.dataset.userid}`
 	window.location.href = newURL;
 	
