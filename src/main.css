@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+	body {
+		font-family: JetBrains Mono, sans-serif;
+	}
+	@keyframes back2 {
+		from {
+			transform: translateX(0%);
+			opacity: 1;
+		}
+		to {
+			transform: translateX(100%);
+			opacity: 0;
+		}
+		
+	}
+}
+
+
+@layer {
+		
+		
+		::-webkit-scrollbar{
+
+			height: 15px;
+		}
+		::-webkit-scrollbar-track{
+			opacity: 1;
+		}
+		::-webkit-scrollbar-thumb{
+			background-color: white;
+			border-radius: 14px;
+
+		}
+}
+
+

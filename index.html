@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./public/style.css">
+	<title>Blog</title>
+</head>
+<body class="relative overflow-hidden">
+	<div class="menu-burger absolute h-[40px] w-[40px] top-5 right-6 z-10">
+		<span class="bg-black h-[4px] w-full block rounded "></span>
+		<span class="bg-black h-[4px] w-full block rounded translate-y-3.5"></span>
+		<span class="bg-black h-[4px] w-full block rounded translate-y-7"></span>
+	</div>
+	
+	<div class="menu transition-opacity absolute  bg-white w-full h-full flex flex-col items-center justify-center gap-6" data-status="close">
+		<p class="font-bold text-4xl"><a href="/index.html">Главная</a></p>
+		<p class="font-bold text-4xl" ><a href="/lenta.html">Лента</a></p>
+		<p class="font-bold text-4xl" ><a href="/person.html">Профиль</a></p>
+	</div>
+
+	<div class="flex flex-col justify-between w-full h-screen max-w-3xl mx-auto ">
+		<header class="w-full bg-[#B7E3CC] rounded-b-3xl px-4 pt-14 pb-3.5 ">
+			<div class=" w-full flex flex-col items-center justify-center gap-4 ">
+				<h1 class="max-w-[282px] text-4xl font-bold leading-normal" >Вымышленный блог об очень важных вещах</h1>
+				<div class="flex gap-5 ">
+					<img class="w-[51px] h-[47px]" src="🦆 emoji _money with wings_.png" alt="">
+					<img class="w-[51px] h-[47px]"  src="🦆 emoji _money with wings_.png" alt="">
+					<img class="w-[51px] h-[47px]"  src="🦆 emoji _money with wings_.png" alt="">
+				</div>
+			</div>
+		</header>
+
+		<main class="w-full bg-[#B7E3CC] rounded-t-3xl pt-3 pb-20 px-3 max-sm:pb-[20vh] md:pb-[20vh]">
+			<div class=" flex flex-col gap-1 h-full">
+				<h3 class="text-2xl font-normal">Последние посты </h3>
+
+				<div class="overflow-x-scroll w-full snap-mandatory flex gap-2 h-full max-sm:h-[30vh] md:h-[30vh]">
+					<div class="flex-none snap-start bg-black text-white py-5 px-3 rounded-3xl flex flex-col gap-2 w-full  max-sm:justify-between md:justify-between">
+						<p class="article-name font-medium"></p>
+						<div class="flex justify-between">
+							<button class="bg-[#FFB951] px-10 py-1.5 rounded-3xl text-black font-bold">К статье</button>
+							<p class="date"></p>
+						</div>
+					</div>
+
+					<div class="flex-none snap-start bg-black text-white py-5 px-3 rounded-3xl flex flex-col gap-2 w-full  max-sm:justify-between md:justify-between">
+						<p class="article-name font-medium"></p>
+						<div class="flex justify-between">
+							<button class="bg-[#FFB951] px-10 py-1.5 rounded-3xl text-black font-bold">К статье</button>
+							<p class="date"></p>
+						</div>
+					</div>
+
+					<div class="flex-none snap-start bg-black text-white py-5 px-3 rounded-3xl flex flex-col gap-2 w-full  max-sm:justify-between md:justify-between">
+						<p class="article-name font-medium"></p>
+						<div class="flex justify-between">
+							<button class="bg-[#FFB951] px-10 py-1.5 rounded-3xl text-black font-bold">К статье</button>
+							<p class="date"></p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</main>
+
+	</div>
+	
+	
+	
+	<script src="main.js" type="module" ></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/public/style.css">
+	<title>Person</title>
+</head>
+<body>
+	<div class="menu-burger absolute h-[40px] w-[40px] top-5 right-6 z-10">
+		<span class="bg-black h-[4px] w-full block rounded "></span>
+		<span class="bg-black h-[4px] w-full block rounded translate-y-3.5"></span>
+		<span class="bg-black h-[4px] w-full block rounded translate-y-7"></span>
+	</div>
+	
+	<div class="menu animate-show transition-opacity absolute  bg-white w-full h-full flex flex-col items-center justify-center gap-6" data-status="close">
+		<p class="font-bold text-4xl"><a href="/index.html">Главная</a></p>
+		<p class="font-bold text-4xl" ><a href="/lenta.html">Лента</a></p>
+		<p class="font-bold text-4xl" ><a href="/person.html">Профиль</a></p>
+	</div>
+
+	<div class="signin h-screen flex justify-center items-center"> 
+		<div class="flex flex-col gap-6  bg-black px-5 py-6 rounded-xl">
+			<input class="block h-10 rounded-xl p-2" type="text" placeholder="Имя" id="name">
+			<input class="block h-10 rounded-xl p-2" type="text" placeholder="Пароль" id="password">
+			<button class="block bg-[#B7E3CC] rounded-xl p-4 text-xl font-bold" >Войти</button>
+		</div>
+	</div>
+
+
+	
+	<script src="person.js"></script>
+</body>
+</html>
